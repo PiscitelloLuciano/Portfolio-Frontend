@@ -1,1 +1,109 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url(assets/Img/fondo.jpg);
+  background-repeat: repeat;
+}
+
+* {
+  color: #ffffff;
+  font-size: 22px;
+  font-family: "Judson", serif;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 50px;
+  color: #918ef4;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 50px;
+  color: #918ef4;
+}
+
+h4 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+.separacionV {
+  height: 100%;
+  width: 2px;
+  background-color: #ffffff;
+}
+
+.separacionH {
+  width: 100vh;
+  height: 2px;
+  border: 1px dashed #ffffff;
+  margin: 47px 0px;
+  float: right;
+}
+
+.division {
+  height: 94px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin: 90px 0px;
+}
+
+#agg {
+  background-image: url(assets/Img/agg.png);
+  background-color: rgba(0, 0, 0, 0);
+  background-size: 100% 100%;
+  border: none;
+  width: 42px;
+  height: 42px;
+  margin-left: 10px;
+}
+
+#edit {
+  background-image: url(assets/Img/edit.png);
+  background-color: rgba(0, 0, 0, 0);
+  background-size: 100% 100%;
+  border: none;
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+#delete {
+  background-image: url(assets/Img/delete.png);
+  background-color: rgba(0, 0, 0, 0);
+  background-size: 100% 100%;
+  border: none;
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+#cambiarT {
+  display: none;
+  color: black;
+}
+
+.tittle {
+  display: flex;
+}
+
+.lista-sin-estilo {
+  list-style-type: none;
+}
+
+.sep60 {
+  margin-left: 60px;
+}
+
+.sep15 {
+  margin-left: 15px;
+}

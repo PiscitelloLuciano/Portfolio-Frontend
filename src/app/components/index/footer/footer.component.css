@@ -1,0 +1,11 @@
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.piePag {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}

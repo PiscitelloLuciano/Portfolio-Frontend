@@ -1,0 +1,26 @@
+.projects {
+  margin-top: 60px;
+  margin-left: 60px;
+}
+
+.tittle-project {
+  justify-content: center;
+}
+
+.project img {
+  width: 256px;
+  margin-right: 20px;
+}
+
+.project {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.project p {
+  font-size: 24px;
+}
+
+.disminuirTamaño {
+  font-size: 18px;
+}
