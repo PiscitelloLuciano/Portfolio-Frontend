@@ -12,7 +12,7 @@ import { ProjectsComponent } from './components/index/projects/projects.componen
 import { FooterComponent } from './components/index/footer/footer.component';
 import { IndexComponent } from './components/index/index.component';
 import { DetailsComponent } from './components/index/details/details.component';
-import { BtnEditComponent } from './components/reusable/btn-edit/btn-edit.component';
+import { BtnEditComponent } from './components/index/details/btn-edit/btn-edit.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +26,10 @@ import { BtnEditComponent } from './components/reusable/btn-edit/btn-edit.compon
     FooterComponent,
     IndexComponent,
     DetailsComponent,
-    BtnEditComponent
+    BtnEditComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

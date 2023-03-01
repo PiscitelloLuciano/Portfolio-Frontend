@@ -1,0 +1,38 @@
+.sup div {
+  margin: 30px 30px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-ap {
+  justify-content: center;
+}
+
+.redes {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.redes a {
+  margin-left: 10px;
+}
+
+.log-in {
+  background-color: rgba(0, 0, 0, 0);
+  height: 55px;
+  width: 149px;
+  border-radius: 27.5px;
+  border: #d6c3c9 3px solid;
+  color: #d6c3c9;
+  font-size: 16px;
+}
+
+.register {
+  background-color: #d6c3c9;
+  color: black;
+  border-radius: 27.5px;
+  height: 55px;
+  width: 149px;
+  margin-left: 10px;
+  font-size: 16px;
+}

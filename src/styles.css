@@ -4,35 +4,35 @@ body {
 }
 
 * {
+  font-size: 20px;
   color: #ffffff;
-  font-size: 22px;
   font-family: "Judson", serif;
 }
 
 h2 {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 42px;
   color: #918ef4;
 }
 
 h3 {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 37px;
   color: #918ef4;
 }
 
 h4 {
-  font-size: 38px;
+  font-size: 33px;
   font-weight: bold;
 }
 
 h5 {
-  font-size: 28px;
+  font-size: 29px;
   font-weight: bold;
 }
 
 h6 {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .separacionV {
@@ -98,12 +98,4 @@ h6 {
 
 .lista-sin-estilo {
   list-style-type: none;
-}
-
-.sep60 {
-  margin-left: 60px;
-}
-
-.sep15 {
-  margin-left: 15px;
 }
