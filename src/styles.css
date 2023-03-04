@@ -96,6 +96,10 @@ h6 {
   display: flex;
 }
 
-.lista-sin-estilo {
-  list-style-type: none;
+.flex-container {
+  display: flex;
+}
+
+.botones {
+  margin-left: 30px;
 }

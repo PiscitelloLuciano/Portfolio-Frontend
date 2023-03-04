@@ -23,6 +23,7 @@ import { BeditAboutmeComponent } from './components/index/info/aboutme/bedit-abo
 import { BeditAddknowledgeComponent } from './components/index/info/addknowledge/bedit-addknowledge/bedit-addknowledge.component';
 import { BeditExperienceComponent } from './components/index/info/experience/bedit-experience/bedit-experience.component';
 import { BeditSkillsComponent } from './components/index/skills/bedit-skills/bedit-skills.component';
+import { BaggProjectsComponent } from './components/index/projects/bagg-projects/bagg-projects.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { BeditSkillsComponent } from './components/index/skills/bedit-skills/bed
     BeditAddknowledgeComponent,
     BeditExperienceComponent,
     BeditSkillsComponent,
+    BaggProjectsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
