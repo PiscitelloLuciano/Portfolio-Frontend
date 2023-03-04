@@ -2,18 +2,10 @@
   width: 100px;
 }
 
-.foto-perfil {
+.edit {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  text-align: center;
+  height: 100%;
+  align-items: flex-end;
 }
 
-.fotoDePerfil {
-  width: 180px;
-  height: auto;
-  opacity: 1;
-  display: block;
-  transition: 0.5s ease;
-}
+/* color #D6C3C9 */

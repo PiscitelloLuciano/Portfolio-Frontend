@@ -9,19 +9,17 @@
   </div>
 
   <!-- -------------------------------------------------Foto de Perfil + datos---------------------------------------------------- -->
-
-  <div class="foto-perfil">
-    <img
-      src="../assets/Img/Foto de Perfil.png"
-      alt="Foto de perfil"
-      class="fotoDePerfil"
-    />
-    <div class="name-tittle">
-      <div class="text-perfil">
-        <h5 class="cambio-nombre">Piscitello Luciano Nicolás</h5>
-        <p>Programador Web Full Stack</p>
+  <div class="row">
+    <div class="container-fototext col-sm-3">
+      <app-foto-perfil></app-foto-perfil>
+      <div class="name-tittle">
+        <div class="text-perfil">
+          <h5 class="cambio-nombre">Piscitello Luciano Nicolás</h5>
+          <p>Programador Web Full Stack</p>
+        </div>
       </div>
     </div>
+    <app-btn-edit class="col-sm-3 edit"></app-btn-edit>
   </div>
 
   <div class="row">
@@ -36,7 +34,6 @@
         <b>N° Celular:</b> 3525627698
       </p>
     </div>
-    <app-btn-edit class="col-sm-6"></app-btn-edit>
     <!-- -------------------------------------------------Iconos de Lenguajes y frameworks---------------------------------------------------- -->
 
     <!-- <div class="col-sm">

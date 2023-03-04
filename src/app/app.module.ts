@@ -13,6 +13,16 @@ import { FooterComponent } from './components/index/footer/footer.component';
 import { IndexComponent } from './components/index/index.component';
 import { DetailsComponent } from './components/index/details/details.component';
 import { BtnEditComponent } from './components/index/details/btn-edit/btn-edit.component';
+import { FotoPerfilComponent } from './components/index/details/foto-perfil/foto-perfil.component';
+import { AboutmeComponent } from './components/index/info/aboutme/aboutme.component';
+import { AddknowledgeComponent } from './components/index/info/addknowledge/addknowledge.component';
+import { EducationComponent } from './components/index/info/education/education.component';
+import { ExperienceComponent } from './components/index/info/experience/experience.component';
+import { BeditEducationComponent } from './components/index/info/education/bedit-education/bedit-education.component';
+import { BeditAboutmeComponent } from './components/index/info/aboutme/bedit-aboutme/bedit-aboutme.component';
+import { BeditAddknowledgeComponent } from './components/index/info/addknowledge/bedit-addknowledge/bedit-addknowledge.component';
+import { BeditExperienceComponent } from './components/index/info/experience/bedit-experience/bedit-experience.component';
+import { BeditSkillsComponent } from './components/index/skills/bedit-skills/bedit-skills.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +37,16 @@ import { BtnEditComponent } from './components/index/details/btn-edit/btn-edit.c
     IndexComponent,
     DetailsComponent,
     BtnEditComponent,
+    FotoPerfilComponent,
+    AboutmeComponent,
+    AddknowledgeComponent,
+    EducationComponent,
+    ExperienceComponent,
+    BeditEducationComponent,
+    BeditAboutmeComponent,
+    BeditAddknowledgeComponent,
+    BeditExperienceComponent,
+    BeditSkillsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

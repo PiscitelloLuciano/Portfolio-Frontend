@@ -1,0 +1,52 @@
+<!-- Button trigger modal -->
+<button
+  id="edit"
+  data-bs-toggle="modal"
+  data-bs-target="#modalEditSkills"
+></button>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="modalEditSkills"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="modalEditSkills"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalEditSkillsLabel">
+          Editar Información
+        </h1>
+        <button
+          type="button"
+          class="btn-close text-white"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form class="form">
+          <div class="row inputEdit">
+            <label class="form-label col-sm-3">Habilidad</label>
+            <input type="text" id="habilidad" class="btn-input col-sm-6" />
+          </div>
+          <div class="row inputEdit">
+            <label class="form-label col-sm-3">Rango de habilidad </label>
+            <input
+              type="range"
+              id="rangeHabilidad"
+              class="btn-input input-range2 col-sm-6"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
