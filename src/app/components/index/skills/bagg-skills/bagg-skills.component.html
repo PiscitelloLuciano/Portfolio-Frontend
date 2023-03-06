@@ -2,24 +2,24 @@
 <button
   id="agg"
   data-bs-toggle="modal"
-  data-bs-target="#modalAggProject"
+  data-bs-target="#modalAggSkills"
 ></button>
 
 <!-- Modal -->
 <div
   class="modal fade"
-  id="modalAggProject"
+  id="modalAggSkills"
   data-bs-backdrop="static"
   data-bs-keyboard="false"
   tabindex="-1"
-  aria-labelledby="modalAggProject"
+  aria-labelledby="modalAggSkills"
   aria-hidden="true"
 >
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="modalAggProjectLabel">
-          Agregar Proyecto
+        <h1 class="modal-title fs-5" id="modalAggSkillsLabel">
+          Agregar Habilidad
         </h1>
         <button
           type="button"
@@ -31,27 +31,16 @@
       <div class="modal-body">
         <form class="form">
           <div class="row inputEdit">
-            <label class="form-label col-sm-3">Nombre</label>
-            <input
-              type="text"
-              id="newNombreProyecto"
-              class="btn-input col-sm-6"
-            />
+            <label class="form-label col-sm-3">Habilidad</label>
+            <input type="text" id="newHabilidad" class="btn-input col-sm-6" />
           </div>
           <div class="row inputEdit">
-            <label class="form-label col-sm-3">Descripcion</label>
+            <label class="form-label col-sm-3">Rango de habilidad</label>
             <input
-              type="text"
-              id="newDescripcionProyecto"
-              class="btn-input col-sm-6"
+              type="range"
+              id="newRangoHabilidad"
+              class="btn-input input-range2 col-sm-6"
             />
-          </div>
-          <div class="row inputEdit">
-            <label class="form-label col-sm-5">Imagen de Portada</label>
-            <div class="inputFile-container col-sm-6">
-              <p>Seleccionar Archivo</p>
-              <input type="file" id="newImgProyecto" />
-            </div>
           </div>
         </form>
       </div>

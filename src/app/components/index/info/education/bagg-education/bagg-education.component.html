@@ -1,25 +1,25 @@
 <!-- Button trigger modal -->
 <button
-  id="edit"
+  id="aggInfo"
   data-bs-toggle="modal"
-  data-bs-target="#modalEditSkills"
+  data-bs-target="#modalAggEducation"
 ></button>
 
 <!-- Modal -->
 <div
   class="modal fade"
-  id="modalEditSkills"
+  id="modalAggEducation"
   data-bs-backdrop="static"
   data-bs-keyboard="false"
   tabindex="-1"
-  aria-labelledby="modalEditSkills"
+  aria-labelledby="modalAggEducation"
   aria-hidden="true"
 >
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="modalEditSkillsLabel">
-          Editar Información
+        <h1 class="modal-title fs-5" id="modalAggEducationLabel">
+          Agregar Educación
         </h1>
         <button
           type="button"
@@ -31,22 +31,18 @@
       <div class="modal-body">
         <form class="form">
           <div class="row inputEdit">
-            <label class="form-label col-sm-3">Habilidad</label>
-            <input type="text" id="habilidad" class="btn-input col-sm-6" />
+            <label class="form-label col-sm-3">Institución</label>
+            <input type="text" id="newInstitucion" class="btn-input col-sm-6" />
           </div>
           <div class="row inputEdit">
-            <label class="form-label col-sm-3">Rango de habilidad </label>
-            <input
-              type="range"
-              id="rangeHabilidad"
-              class="btn-input input-range2 col-sm-6"
-            />
+            <label class="form-label col-sm-3">Titulo</label>
+            <input type="text" id="newTitulo" class="btn-input col-sm-6" />
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Guardar
+          Enviar
         </button>
       </div>
     </div>

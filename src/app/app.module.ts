@@ -24,6 +24,10 @@ import { BeditAddknowledgeComponent } from './components/index/info/addknowledge
 import { BeditExperienceComponent } from './components/index/info/experience/bedit-experience/bedit-experience.component';
 import { BeditSkillsComponent } from './components/index/skills/bedit-skills/bedit-skills.component';
 import { BaggProjectsComponent } from './components/index/projects/bagg-projects/bagg-projects.component';
+import { BaggSkillsComponent } from './components/index/skills/bagg-skills/bagg-skills.component';
+import { BaggAddknowledgeComponent } from './components/index/info/addknowledge/bagg-addknowledge/bagg-addknowledge.component';
+import { BaggEducationComponent } from './components/index/info/education/bagg-education/bagg-education.component';
+import { BaggExperienceComponent } from './components/index/info/experience/bagg-experience/bagg-experience.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +53,10 @@ import { BaggProjectsComponent } from './components/index/projects/bagg-projects
     BeditExperienceComponent,
     BeditSkillsComponent,
     BaggProjectsComponent,
+    BaggSkillsComponent,
+    BaggAddknowledgeComponent,
+    BaggEducationComponent,
+    BaggExperienceComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

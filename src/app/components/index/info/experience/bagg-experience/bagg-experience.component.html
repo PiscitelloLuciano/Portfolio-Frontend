@@ -1,25 +1,25 @@
 <!-- Button trigger modal -->
 <button
-  id="edit"
+  id="aggInfo"
   data-bs-toggle="modal"
-  data-bs-target="#modalEditExperience"
+  data-bs-target="#modalAggExperience"
 ></button>
 
 <!-- Modal -->
 <div
   class="modal fade"
-  id="modalEditExperience"
+  id="modalAggExperience"
   data-bs-backdrop="static"
   data-bs-keyboard="false"
   tabindex="-1"
-  aria-labelledby="modalEditExperience"
+  aria-labelledby="modalAggExperience"
   aria-hidden="true"
 >
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="modalEditExperienceLabel">
-          Editar Información
+        <h1 class="modal-title fs-5" id="modalAggExperienceLabel">
+          Agregar Empleo
         </h1>
         <button
           type="button"
@@ -32,21 +32,25 @@
         <form class="form">
           <div class="row inputEdit">
             <label class="form-label col-sm-5">Trabajo</label>
-            <input type="text" id="trabajo" class="btn-input col-sm-6" />
+            <input type="text" id="newTrabajo" class="btn-input col-sm-6" />
           </div>
           <div class="row inputEdit">
             <label class="form-label col-sm-5">Año de comienzo</label>
-            <input type="number" id="añoComienzo" class="btn-input col-sm-6" />
+            <input
+              type="number"
+              id="newAñoComienzo"
+              class="btn-input col-sm-6"
+            />
           </div>
           <div class="row inputEdit">
             <label class="form-label col-sm-5">Año de finalización</label>
-            <input type="number" id="añoFin" class="btn-input col-sm-6" />
+            <input type="number" id="newAñoFin" class="btn-input col-sm-6" />
           </div>
           <div class="row inputEdit">
             <label class="form-label col-sm-5">Detalles</label>
             <input
               type="text"
-              id="detallesTrabajo"
+              id="newDetallesTrabajo"
               class="btn-input col-sm-6"
               placeholder="Detalle su trabajo..."
             />
@@ -55,7 +59,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Guardar
+          Enviar
         </button>
       </div>
     </div>
