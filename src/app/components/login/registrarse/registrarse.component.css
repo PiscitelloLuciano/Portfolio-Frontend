@@ -1,0 +1,36 @@
+a {
+  color: #d6c3c9;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+* {
+  color: #d6c3c9;
+}
+
+.modal-content {
+  background-color: #1b1b1b;
+}
+
+.btn-input {
+  border: 3px, solid, white;
+  margin-left: 10px;
+  background-color: transparent;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.inputEdit {
+  margin-bottom: 5px;
+}
+
+.btn-register {
+  height: 42px;
+  width: 100px;
+  background-color: #918ef4;
+  outline: none;
+  border: none;
+  border-radius: 45px;
+  color: white;
+}

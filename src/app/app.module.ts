@@ -28,6 +28,7 @@ import { BaggSkillsComponent } from './components/index/skills/bagg-skills/bagg-
 import { BaggAddknowledgeComponent } from './components/index/info/addknowledge/bagg-addknowledge/bagg-addknowledge.component';
 import { BaggEducationComponent } from './components/index/info/education/bagg-education/bagg-education.component';
 import { BaggExperienceComponent } from './components/index/info/experience/bagg-experience/bagg-experience.component';
+import { RegistrarseComponent } from './components/login/registrarse/registrarse.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { BaggExperienceComponent } from './components/index/info/experience/bagg
     BaggAddknowledgeComponent,
     BaggEducationComponent,
     BaggExperienceComponent,
+    RegistrarseComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

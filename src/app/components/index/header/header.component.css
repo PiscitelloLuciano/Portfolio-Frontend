@@ -21,3 +21,8 @@
   width: 30px;
   cursor: pointer;
 }
+
+.log-out button {
+  background-color: transparent;
+  border: none;
+}
