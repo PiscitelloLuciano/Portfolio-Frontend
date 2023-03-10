@@ -1,2 +1,32 @@
-<p>formulario works!</p>
-<button class="btn btn-primary" routerLink="/home">Ir al Index</button>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 tittle-login">
+      <app-bienvenida></app-bienvenida>
+    </div>
+    <div class="col-sm-6 form-login">
+      <form>
+        <div class="mb-3">
+          <input
+            type="email"
+            class="input-login"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Correo electrónico"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="password"
+            class="input-login"
+            id="exampleInputPassword1"
+            placeholder="Contraseña"
+          />
+        </div>
+        <p>Si no tienes una cuenta, debes <a href="#">Registrarte</a></p>
+        <div class="centrar-btn">
+          <button class="btn-login" routerLink="/home">Iniciar Sesión</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

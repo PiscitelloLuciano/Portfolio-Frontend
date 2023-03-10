@@ -1,0 +1,22 @@
+.tittle-gradient {
+  font-size: 90px;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #f10084 5.69%,
+    #e8a4f9 59.58%,
+    #48dcaa 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.slogan {
+  font-size: 35px;
+  color: #d6c3c9;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+}
