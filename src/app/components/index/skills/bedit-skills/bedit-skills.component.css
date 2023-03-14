@@ -12,6 +12,7 @@
   border: solid, 1px white;
   outline: none;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 .inputEdit {
@@ -20,4 +21,61 @@
 
 * {
   color: #d6c3c9;
+}
+
+/* -------------------------------------------INPUT RANGE----------------------------------------------- */
+
+.input-range2 {
+  -webkit-appearance: none;
+  background-color: #d6c3c9;
+  height: 10px;
+  outline: none;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto 0px;
+  box-shadow: inset 0 0 4px #1b1b1b;
+  padding: 0px;
+  width: 100%;
+}
+
+.input-range2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 18px;
+  border-radius: 50%;
+  background: #d6c3c9;
+  box-shadow: -418px 0 0 400px #918ef4;
+  cursor: pointer;
+  border: 3px solid #7674c7;
+}
+
+/* MOZILLA FIREFOX Y OTROS */
+.input-range2::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 18px;
+  border-radius: 50%;
+  background: #d6c3c9;
+  box-shadow: -418px 0 0 400px #918ef4;
+  cursor: pointer;
+  border: 3px solid #7674c7;
+}
+
+.range-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#range-container-tittle {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#rangeValue {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 24px;
 }

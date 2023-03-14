@@ -6,14 +6,6 @@
   color: black;
 }
 
-.btn-input {
-  margin-left: 10px;
-  background-color: transparent;
-  border: solid, 1px white;
-  outline: none;
-  border-radius: 5px;
-}
-
 .inputEdit {
   margin-bottom: 5px;
 }

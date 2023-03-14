@@ -2,14 +2,6 @@
   background-color: #1b1b1b;
 }
 
-.btn-input {
-  margin-left: 10px;
-  background-color: transparent;
-  border: solid, 1px white;
-  outline: none;
-  border-radius: 10px;
-}
-
 .inputEdit {
   margin-bottom: 5px;
 }

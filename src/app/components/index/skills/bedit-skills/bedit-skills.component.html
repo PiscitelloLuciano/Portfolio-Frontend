@@ -21,31 +21,34 @@
         <h1 class="modal-title fs-5" id="modalEditSkillsLabel">
           Editar Información
         </h1>
-        <button
-          type="button"
-          class="btn-close text-white"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
+        <button type="button" data-bs-dismiss="modal" aria-label="Close">
+          <img src="../../../../../assets/Img/close.png" alt="close" />
+        </button>
       </div>
       <div class="modal-body">
         <form class="form">
           <div class="row inputEdit">
-            <label class="form-label col-sm-3">Habilidad</label>
+            <label class="form-label col-sm-5">Habilidad</label>
             <input type="text" id="habilidad" class="btn-input col-sm-6" />
           </div>
-          <div class="row inputEdit">
-            <label class="form-label col-sm-3">Rango de habilidad </label>
-            <input
-              type="range"
-              id="rangeHabilidad"
-              class="btn-input input-range2 col-sm-6"
-            />
+          <div class="row inputEdit" id="range-container-tittle">
+            <label class="form-label col-sm-5">Rango de habilidad</label>
+            <div class="range-container col-sm-6">
+              <span id="rangeValue">0</span>
+              <Input
+                class="btn-input input-range2"
+                type="range"
+                value="0"
+                min="0"
+                max="100"
+                id="RangoHabilidad"
+              />
+            </div>
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+        <button type="button" class="btn-save" data-bs-dismiss="modal">
           Guardar
         </button>
       </div>

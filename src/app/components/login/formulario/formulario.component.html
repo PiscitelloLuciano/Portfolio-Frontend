@@ -4,7 +4,7 @@
       <app-bienvenida></app-bienvenida>
     </div>
     <div class="col-sm-6 form-login">
-      <form>
+      <form [formGroup]="loginForm" (ngSubmit)="loginUsuario()">
         <div class="mb-3">
           <input
             type="email"
@@ -12,7 +12,17 @@
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             placeholder="Correo electrónico"
+            formControlName="email"
           />
+          <div class="alerts" [hidden]="email?.valid || email?.pristine">
+            <span *ngIf="email?.errors?.['required']" class="text-danger"
+              >Este campo es obligatorio</span
+            >
+
+            <span *ngIf="email?.errors?.['email']" class="text-danger"
+              >El correo electrónico no es válido
+            </span>
+          </div>
         </div>
         <div class="mb-3">
           <input
@@ -20,14 +30,31 @@
             class="input-login"
             id="exampleInputPassword1"
             placeholder="Contraseña"
+            formControlName="password"
           />
+          <div class="alerts" [hidden]="password?.valid || password?.pristine">
+            <span *ngIf="password?.errors?.['required']" class="text-danger"
+              >Este campo es obligatorio</span
+            >
+
+            <span *ngIf="password?.errors?.['minlength']" class="text-danger"
+              >La contraseña debe contener al menos 8 carácteres
+            </span>
+          </div>
         </div>
         <p>
           Si no tienes una cuenta, debes <app-registrarse></app-registrarse>
         </p>
 
         <div class="centrar-btn">
-          <button class="btn-login" routerLink="/home">Iniciar Sesión</button>
+          <button
+            type="submit"
+            class="btn-login btn"
+            [disabled]="loginForm.invalid"
+            routerLink="/home"
+          >
+            Iniciar Sesión
+          </button>
         </div>
       </form>
     </div>

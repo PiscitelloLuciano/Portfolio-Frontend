@@ -29,6 +29,7 @@
 }
 
 .lapiz {
+  position: absolute;
   font-size: 30px;
 }
 
@@ -38,4 +39,12 @@
 
 .box-foto-perfil:hover .foto-perfil {
   transform: scale(1.25);
+}
+
+#archivoFotoPerfil {
+  overflow: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }

@@ -8,4 +8,12 @@
   align-items: flex-end;
 }
 
-/* color #D6C3C9 */
+.text-perfil span {
+  font-size: 26px;
+  color: #d6c3c9;
+  font-weight: bold;
+}
+
+.text-perfil p {
+  color: #d6c3c9;
+}
