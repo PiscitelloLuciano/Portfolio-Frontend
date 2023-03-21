@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,6 +32,7 @@ import { BaggEducationComponent } from './components/index/info/education/bagg-e
 import { BaggExperienceComponent } from './components/index/info/experience/bagg-experience/bagg-experience.component';
 import { RegistrarseComponent } from './components/login/registrarse/registrarse.component';
 
+import { InfoExperienceService } from './services/info-experience.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,8 +63,14 @@ import { RegistrarseComponent } from './components/login/registrarse/registrarse
     BaggExperienceComponent,
     RegistrarseComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FormsModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+  ],
+  providers: [InfoExperienceService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

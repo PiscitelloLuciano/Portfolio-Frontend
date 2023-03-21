@@ -3,14 +3,16 @@
     <h3>Educación</h3>
     <app-bagg-education></app-bagg-education>
   </div>
-  <div class="flex-container">
-    <div class="datosEducacion">
-      <p>Colegio Domingo Faustino Sarmiento ipem n292</p>
-      <p>Economia || 2016 a 2021</p>
-    </div>
-    <div class="botones">
-      <app-bedit-education></app-bedit-education>
-      <button id="delete"></button>
-    </div>
-  </div>
+  <ul>
+    <li class="flex-container" *ngFor="let education of educations">
+      <div class="datosEducacion">
+        <h5>{{ education.institucion }}</h5>
+        <p>{{ education.titulo }} || {{ education.anoFin }}</p>
+      </div>
+      <div class="botones">
+        <app-bedit-education></app-bedit-education>
+        <button id="delete"></button>
+      </div>
+    </li>
+  </ul>
 </article>

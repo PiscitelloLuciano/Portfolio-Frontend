@@ -13,9 +13,9 @@
     <div class="container-fototext col-sm-5">
       <app-foto-perfil></app-foto-perfil>
       <div class="name-tittle">
-        <div class="text-perfil">
-          <span>Piscitello Luciano Nicolás</span>
-          <p>Programador Web Full Stack</p>
+        <div class="text-perfil" *ngFor="let detail of details">
+          <span>{{ detail.apellido }} {{ detail.nombre }}</span>
+          <p>{{ detail.titulo }}</p>
         </div>
       </div>
     </div>
@@ -23,15 +23,15 @@
   </div>
 
   <div class="row">
-    <div class="datos col-sm-5">
+    <div class="datos col-sm-5" *ngFor="let detail of details">
       <p>
-        <b>Fecha de Nacimiento:</b> 21/09/2003 <br />
-        <b>Ubicación:</b> Colonia Caroya, Cordoba, Argentina <br />
+        <b>Fecha de Nacimiento:</b> {{ detail.nacimiento }} <br />
+        <b>Ubicación:</b> {{ detail.ubicacion }} <br />
         <b>Dirección:</b>
-        10 de Julio Sur N°120
+        {{ detail.direccion }}
         <br />
-        <b>Correo:</b> Lucianopiscitello8@gmail.com <br />
-        <b>N° Celular:</b> 3525627698
+        <b>Correo:</b> {{ detail.email }} <br />
+        <b>N° Celular:</b> detail.celular
       </p>
     </div>
     <!-- -------------------------------------------------Iconos de Lenguajes y frameworks---------------------------------------------------- -->

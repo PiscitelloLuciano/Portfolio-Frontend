@@ -4,18 +4,20 @@
     <app-bagg-skills></app-bagg-skills>
   </div>
 
-  <div class="row">
-    <article class="skill">
-      <img src="../../../assets/Img/radial-porcentaje.png" alt="porcentaje" />
-      <app-bedit-skills></app-bedit-skills>
-      <button id="delete"></button>
-      <h5>Trabajo en Equipo</h5>
-    </article>
+  <article class="skill" *ngFor="let skill of skills">
+    <h4>{{ skill.habilidad }}</h4>
+    <div class="porcentaje-radial"></div>
+    <app-bedit-skills></app-bedit-skills>
+    <button id="delete"></button>
+  </article>
+
+  <div class="progress-bar">
+    <div class="progress-bar-fill" [style.width.%]="progress"></div>
+  </div>
+
+  <div class="division">
+    <div class="separacionV">
+      <div class="separacionH"></div>
+    </div>
   </div>
 </section>
-
-<div class="division">
-  <div class="separacionV">
-    <div class="separacionH"></div>
-  </div>
-</div>

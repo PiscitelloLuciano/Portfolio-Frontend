@@ -3,11 +3,19 @@
     <h3>Experiencia</h3>
     <app-bagg-experience></app-bagg-experience>
   </div>
-  <div class="flex-container">
-    <p>Atencion al publico || 2022</p>
-    <div class="botones">
-      <app-bedit-experience></app-bedit-experience>
-      <button id="delete"></button>
-    </div>
-  </div>
+  <ul>
+    <li class="flex-container" *ngFor="let experience of experiences">
+      <div class="text-content">
+        <h5>
+          {{ experience.empleo }} || {{ experience.anoInicial }} -
+          {{ experience.anoFinal }}
+        </h5>
+        <p>{{ experience.detalles }}</p>
+      </div>
+      <div class="botones">
+        <app-bedit-experience></app-bedit-experience>
+        <button id="delete"></button>
+      </div>
+    </li>
+  </ul>
 </article>

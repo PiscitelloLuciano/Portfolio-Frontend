@@ -5,19 +5,22 @@
   </div>
 
   <div class="projects">
-    <article class="project">
-      <img
-        src="../../../../assets/Img/Proyecto WaraWara.png"
-        alt="Imagen del proyecto"
-      />
+    <article class="project" *ngFor="let project of projects">
+      <a [href]="project.link"
+        ><img [src]="project.imagen" alt="Imagen del proyecto"
+      /></a>
       <div class="alinearVertical">
         <p class="name-pag">
           <b> Nombre: </b>
-          <span class="disminuirTamaño"> WaraWara </span>
+          <span class="disminuirTamaño"> {{ project.nombre }} </span>
         </p>
         <p>
           <b> Descripción: </b>
-          <span class="disminuirTamaño"> E-Commerce </span>
+          <span class="disminuirTamaño"> {{ project.detalles }} </span>
+        </p>
+        <p>
+          <b> Link: </b>
+          <a class="disminuirTamaño"> {{ project.link }} </a>
         </p>
       </div>
       <button id="delete"></button>

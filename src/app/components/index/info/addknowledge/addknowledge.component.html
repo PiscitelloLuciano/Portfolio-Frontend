@@ -4,8 +4,11 @@
     <app-bagg-addknowledge></app-bagg-addknowledge>
   </div>
   <ul>
-    <li class="flex-container">
-      <p>Ingles</p>
+    <li class="flex-container" *ngFor="let knowledge of addKnowLedgeList">
+      <div class="text-container">
+        <h5>{{ knowledge.conocimiento }}</h5>
+        <p>{{ knowledge.rangoConocimiento }}</p>
+      </div>
       <div class="botones">
         <app-bedit-addknowledge class="sep30"></app-bedit-addknowledge>
         <button id="delete"></button>
