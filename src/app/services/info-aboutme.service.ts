@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Aboutme } from 'src/models/Aboutme';
 
 @Injectable({
@@ -10,7 +11,15 @@ export class InfoAboutmeService {
 
   constructor(private http: HttpClient) {}
 
-  getAboutme() {
+  getAboutme(): Observable<Aboutme[]> {
     return this.http.get<Aboutme[]>(this.url);
+  }
+
+  getAboutId(id: number): Observable<Aboutme> {
+    return this.http.get<Aboutme>(this.url + '/' + id);
+  }
+
+  editarAboutme(about: Aboutme): Observable<Aboutme> {
+    return this.http.put<Aboutme>(this.url, about);
   }
 }

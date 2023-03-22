@@ -13,4 +13,12 @@ export class InfoExperienceService {
   getExperience() {
     return this.http.get<Experience[]>(this.url);
   }
+
+  crearExperience(experience: Experience) {
+    return this.http.post<Experience>(this.url, experience);
+  }
+
+  eliminarExperience(id: number) {
+    return this.http.delete<Experience>(this.url + '/' + id);
+  }
 }

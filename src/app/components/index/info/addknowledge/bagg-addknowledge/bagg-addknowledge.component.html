@@ -28,15 +28,21 @@
       <div class="modal-body">
         <form class="form">
           <div class="row inputEdit">
-            <label class="form-label col-sm-5">Conocimiento</label>
+            <label for="newConocimiento" class="form-label col-sm-5"
+              >Conocimiento</label
+            >
             <input
               type="text"
               id="newConocimiento"
               class="btn-input col-sm-6"
+              name="newConocimiento"
+              [(ngModel)]="knowledge.conocimiento"
             />
           </div>
           <div class="row inputEdit" id="range-container-tittle">
-            <label class="form-label col-sm-5">Rango de conocimiento</label>
+            <label for="newRangoConocimiento" class="form-label col-sm-5"
+              >Rango de conocimiento</label
+            >
             <div class="range-container col-sm-6">
               <span id="rangeValue">0</span>
               <Input
@@ -46,13 +52,20 @@
                 min="0"
                 max="100"
                 id="newRangoConocimiento"
+                name="newRangoConocimiento"
+                [(ngModel)]="knowledge.rangoConocimiento"
               />
             </div>
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn-save" data-bs-dismiss="modal">
+        <button
+          type="button"
+          class="btn-save"
+          data-bs-dismiss="modal"
+          (click)="create()"
+        >
           Enviar
         </button>
       </div>

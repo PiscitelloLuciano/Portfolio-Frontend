@@ -17,4 +17,14 @@ export class ExperienceComponent {
       this.experiences = data;
     });
   }
+
+  delete(experience: Experience) {
+    this.serv
+      .eliminarExperience(experience.id)
+      .subscribe((res) =>
+        this.serv
+          .getExperience()
+          .subscribe((respuesta) => (this.experiences = respuesta))
+      );
+  }
 }

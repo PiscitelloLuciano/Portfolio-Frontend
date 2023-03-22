@@ -18,4 +18,8 @@ export class AboutmeComponent {
       this.aboutme = data;
     });
   }
+
+  editarAboutme(about: Aboutme) {
+    localStorage.setItem('id', about.id.toString());
+  }
 }

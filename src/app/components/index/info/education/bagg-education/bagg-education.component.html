@@ -28,17 +28,46 @@
       <div class="modal-body">
         <form class="form">
           <div class="row inputEdit">
-            <label class="form-label col-sm-3">Institución</label>
-            <input type="text" id="newInstitucion" class="btn-input col-sm-6" />
+            <label for="newInstitucion" class="form-label col-sm-3"
+              >Institución</label
+            >
+            <input
+              type="text"
+              id="newInstitucion"
+              class="btn-input col-sm-6"
+              name="newInstitucion"
+              [(ngModel)]="education.institucion"
+            />
           </div>
           <div class="row inputEdit">
-            <label class="form-label col-sm-3">Titulo</label>
-            <input type="text" id="newTitulo" class="btn-input col-sm-6" />
+            <label for="newTitulo" class="form-label col-sm-3">Titulo</label>
+            <input
+              type="text"
+              id="newTitulo"
+              class="btn-input col-sm-6"
+              name="newTitulo"
+              [(ngModel)]="education.titulo"
+            />
+          </div>
+          <div class="row inputEdit">
+            <label for="newAnoFinal" class="form-label col-sm-3">Año</label>
+            <input
+              type="number"
+              id="newAnoFinal"
+              class="btn-input col-sm-6"
+              name="newAnoFinal"
+              [(ngModel)]="education.anoFin"
+            />
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn-save" data-bs-dismiss="modal">
+        <button
+          type="button"
+          class="btn-save"
+          data-bs-dismiss="modal"
+          (click)="create()"
+        >
           Enviar
         </button>
       </div>

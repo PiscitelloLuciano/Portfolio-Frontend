@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { InfoEducationService } from 'src/app/services/info-education.service';
 import { Education } from 'src/models/Education';
 
@@ -7,7 +7,7 @@ import { Education } from 'src/models/Education';
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.css'],
 })
-export class EducationComponent {
+export class EducationComponent implements OnInit {
   educations: Education[];
 
   constructor(private serv: InfoEducationService) {}
@@ -16,5 +16,15 @@ export class EducationComponent {
     this.serv.getEducation().subscribe((data) => {
       this.educations = data;
     });
+  }
+
+  delete(education: Education) {
+    this.serv
+      .eliminarEducation(education.id)
+      .subscribe((res) =>
+        this.serv
+          .getEducation()
+          .subscribe((respuesta) => (this.educations = respuesta))
+      );
   }
 }
