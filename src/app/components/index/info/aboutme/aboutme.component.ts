@@ -18,4 +18,10 @@ export class AboutmeComponent {
       this.aboutme = data;
     });
   }
+
+  public getAboutId(id: number) {
+    this.serv.getAboutId(id).subscribe((data) => {
+      console.log(data);
+    });
+  }
 }

@@ -2,6 +2,7 @@
   id="edit"
   data-bs-toggle="modal"
   data-bs-target="#modalEditAboutMe"
+  (click)="edit(aboutme)"
 ></button>
 
 <!-- Modal -->
@@ -25,10 +26,18 @@
         </button>
       </div>
       <div class="modal-body">
-        <form class="form">
+        <form class="form" [formGroup]="formulario">
           <div class="row inputEdit">
-            <label class="form-label col-sm-4">Escribe sobre ti</label>
-            <input type="text" id="aboutme" class="btn-input col-sm-7" />
+            <label for="contenido" class="form-label col-sm-4"
+              >Escribe sobre ti</label
+            >
+            <input
+              type="text"
+              id="aboutme"
+              class="btn-input col-sm-7"
+              name="contenido"
+              formControlName="contenido"
+            />
           </div>
         </form>
       </div>
