@@ -17,5 +17,16 @@ export class SkillsComponent {
       this.skills = data;
     });
   }
+
+  delete(skill: Skills) {
+    this.serv
+      .eliminarSkills(skill.id)
+      .subscribe((res) =>
+        this.serv
+          .getSkills()
+          .subscribe((respuesta) => (this.skills = respuesta))
+      );
+  }
+
   progress: number;
 }

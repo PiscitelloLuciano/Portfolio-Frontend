@@ -13,4 +13,16 @@ export class SkillsService {
   getSkills() {
     return this.http.get<Skills[]>(this.url);
   }
+
+  crearSkills(skill: Skills) {
+    return this.http.post<Skills>(this.url, skill);
+  }
+
+  eliminarSkills(id: number) {
+    return this.http.delete<Skills>(this.url + '/' + id);
+  }
+
+  editarSkills(skill: Skills) {
+    return this.http.put<Skills>(this.url, skill);
+  }
 }

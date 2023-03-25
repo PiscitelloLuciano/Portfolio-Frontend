@@ -28,11 +28,21 @@
       <div class="modal-body">
         <form class="form">
           <div class="row inputEdit">
-            <label class="form-label col-sm-5">Habilidad</label>
-            <input type="text" id="newHabilidad" class="btn-input col-sm-6" />
+            <label for="newHabilidad" class="form-label col-sm-5"
+              >Habilidad</label
+            >
+            <input
+              type="text"
+              id="newHabilidad"
+              class="btn-input col-sm-6"
+              name="newHabilidad"
+              [(ngModel)]="skill.habilidad"
+            />
           </div>
           <div class="row inputEdit" id="range-container-tittle">
-            <label class="form-label col-sm-5">Rango de habilidad</label>
+            <label for="newRangoHabilidad" class="form-label col-sm-5"
+              >Rango de habilidad</label
+            >
             <div class="range-container col-sm-6">
               <span id="rangeValue">0</span>
               <Input
@@ -42,13 +52,20 @@
                 min="0"
                 max="100"
                 id="newRangoHabilidad"
+                name="newRangoHabilidad"
+                [(ngModel)]="skill.rangoHabilidad"
               />
             </div>
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn-save" data-bs-dismiss="modal">
+        <button
+          type="button"
+          class="btn-save"
+          data-bs-dismiss="modal"
+          (click)="create()"
+        >
           Enviar
         </button>
       </div>

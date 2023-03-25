@@ -5,11 +5,11 @@
   </div>
 
   <div class="projects">
-    <article class="project" *ngFor="let project of projects">
-      <a [href]="project.link"
+    <article class="project row" *ngFor="let project of projects">
+      <a [href]="project.link" class="col-sm-3"
         ><img [src]="project.imagen" alt="Imagen del proyecto"
       /></a>
-      <div class="alinearVertical">
+      <div class="alinearVertical col-sm-8">
         <p class="name-pag">
           <b> Nombre: </b>
           <span class="disminuirTamaño"> {{ project.nombre }} </span>
@@ -20,10 +20,12 @@
         </p>
         <p>
           <b> Link: </b>
-          <a class="disminuirTamaño"> {{ project.link }} </a>
+          <a [href]="project.link" class="disminuirTamaño">
+            {{ project.link }}
+          </a>
         </p>
       </div>
-      <button id="delete"></button>
+      <button id="delete" (click)="delete(project)" class="col-sm-1"></button>
     </article>
   </div>
 </section>

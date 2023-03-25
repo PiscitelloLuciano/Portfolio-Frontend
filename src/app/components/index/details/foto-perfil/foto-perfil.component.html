@@ -2,8 +2,10 @@
   <label for="archivoFotoPerfil"
     ><img [src]="detail.imagen" alt="Foto de perfil" class="foto-perfil" />
   </label>
-  <div class="box-lapiz">
-    <input type="file" id="archivoFotoPerfil" />
-    <i class="fa-solid fa-pencil lapiz"></i>
-  </div>
+  <form enctype="multipart/form-data">
+    <div class="box-lapiz">
+      <input type="file" id="archivoFotoPerfil" name="file" />
+      <i class="fa-solid fa-pencil lapiz"></i>
+    </div>
+  </form>
 </div>

@@ -17,4 +17,14 @@ export class AddknowledgeComponent {
       this.addKnowLedgeList = data;
     });
   }
+
+  delete(knowledge: AddKnowledge) {
+    this.serv
+      .eliminarAddKnowledge(knowledge.id)
+      .subscribe((res) =>
+        this.serv
+          .getAddKnowledge()
+          .subscribe((respuesta) => (this.addKnowLedgeList = respuesta))
+      );
+  }
 }

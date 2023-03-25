@@ -26,34 +26,62 @@
         </button>
       </div>
       <div class="modal-body">
-        <form class="form">
+        <form class="form" enctype="multipart/form-data">
           <div class="row inputEdit">
-            <label class="form-label col-sm-3">Nombre</label>
+            <label for="newNombre" class="form-label col-sm-3">Nombre</label>
             <input
               type="text"
-              id="newNombreProyecto"
+              id="newNombre"
               class="btn-input col-sm-6"
+              name="newNombre"
+              [(ngModel)]="project.nombre"
             />
           </div>
           <div class="row inputEdit">
-            <label class="form-label col-sm-3">Descripcion</label>
+            <label for="newDetalles" class="form-label col-sm-3"
+              >Descripcion</label
+            >
             <input
               type="text"
-              id="newDescripcionProyecto"
+              id="newDetalles"
               class="btn-input col-sm-6"
+              name="newDetalles"
+              [(ngModel)]="project.detalles"
             />
           </div>
           <div class="row inputEdit">
-            <label class="form-label col-sm-5">Imagen de Portada</label>
+            <label for="newLink" class="form-label col-sm-3">Link</label>
+            <input
+              type="text"
+              id="newLink"
+              class="btn-input col-sm-6"
+              name="newLink"
+              [(ngModel)]="project.link"
+            />
+          </div>
+          <div class="row inputEdit">
+            <label for="newFile" class="form-label col-sm-5"
+              >Imagen de Portada</label
+            >
             <div class="inputFile-container col-sm-6">
               <p>Seleccionar Archivo</p>
-              <input type="file" id="newImgProyecto" />
+              <input
+                type="file"
+                id="newFile"
+                name="newFile"
+                [(ngModel)]="project.imagen"
+              />
             </div>
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn-save" data-bs-dismiss="modal">
+        <button
+          type="button"
+          class="btn-save"
+          data-bs-dismiss="modal"
+          (click)="create()"
+        >
           Enviar
         </button>
       </div>

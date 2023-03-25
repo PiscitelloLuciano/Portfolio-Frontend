@@ -17,4 +17,14 @@ export class ProjectsComponent {
       this.projects = data;
     });
   }
+
+  delete(project: Projects) {
+    this.serv
+      .eliminarProject(project.id)
+      .subscribe((res) =>
+        this.serv
+          .getProjects()
+          .subscribe((respuesta) => (this.projects = respuesta))
+      );
+  }
 }

@@ -13,4 +13,16 @@ export class ProjectsService {
   getProjects() {
     return this.http.get<Projects[]>(this.url);
   }
+
+  crearProjects(project: Projects) {
+    return this.http.post<Projects>(this.url, project);
+  }
+
+  eliminarProject(id: number) {
+    return this.http.delete<Projects>(this.url + '/' + id);
+  }
+
+  editarProject(project: Projects) {
+    return this.http.put<Projects>(this.url, project);
+  }
 }
