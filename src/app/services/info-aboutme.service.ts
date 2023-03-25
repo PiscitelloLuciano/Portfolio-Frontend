@@ -19,7 +19,7 @@ export class InfoAboutmeService {
     return this.http.get<Aboutme>(this.url + '/' + id);
   }
 
-  editarAboutme(about: Aboutme): Observable<Aboutme> {
-    return this.http.put<Aboutme>(this.url, about);
+  editarAboutme(id: number, about: Aboutme): Observable<Aboutme> {
+    return this.http.put<Aboutme>(this.url + '/' + id, about);
   }
 }

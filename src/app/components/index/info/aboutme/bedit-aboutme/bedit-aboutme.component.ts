@@ -19,19 +19,4 @@ export class BeditAboutmeComponent {
   ) {}
 
   ngOnInit() {}
-
-  cargar(): void {
-    this.activatedRoute.params.subscribe((e) => {
-      let id = e['id'];
-      if (id) {
-        this.serv.getAboutId(id).subscribe((es) => (this.aboutme = es));
-      }
-    });
-  }
-
-  editAboutme(): void {
-    this.serv.editarAboutme(this.aboutme).subscribe((data) => {
-      console.log(data);
-    });
-  }
 }
